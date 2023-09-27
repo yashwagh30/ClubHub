@@ -1,0 +1,22 @@
+.nav{
+    background-color: orangered;
+}
+.nav a{
+    float: left;
+    color: orangered;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav a:hover {
+    background-color: orange;
+    color: black;
+  }
+  
+
+.nav a.active {
+    background-color: red;
+    color: white;
+  }
