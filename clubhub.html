@@ -7,14 +7,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>VIT ClubHub </h1>
-    <div class ="nav">
-        <a class="active"> Home </a>
-        <a> Get Started </a>
-        <a> About us </a>
-        <a> News </a>
-        <a> FAQ's </a>
-        <a> Contact Us </a>
+    <header class="header">
+        <h2 class="logo"> VIT ClubHub</h2>
+        <nav class="nav">
+            <a href="#"> Home </a>
+            <a href="#"> About us </a>
+            <a href="#"> News </a>
+            <a href="#"> FAQ's </a>
+            <a href="#"> Contact us </a>    
+            <button class="button-login-popup"> Get Started </button>
+        </nav>
+    </header>
+
+
+    <div class="wrapper">
+        <div class="box-login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"></span>
+                    <input type="email" required>
+                    <label> Email </label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"></span>
+                    <input type="password" required>
+                    <label> Password </label>
+                </div>
+            </form>
+        </div>
     </div>
+    <script src="script.js">  </script>
 </body>
 </html>
