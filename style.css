@@ -82,7 +82,7 @@
 
 .hero {
   position: absolute;
-  background-image: linear-gradient(to bottom right,rgba(109, 93, 93, 0.7),rgba(17, 53, 98, 0.3)),url('images/background3.jpg');
+  background-image: linear-gradient(to bottom right,rgba(109, 93, 93, 0.7),rgba(17, 53, 98, 0.3)),url('images/background5.png');
   height: 90vh;
   width: 100%;
   background-size: cover;
@@ -128,7 +128,7 @@
 }
 
 
-.wrapper {
+/* .wrapper {
   position: relative;
   width: 400px;
   height: 440px;
@@ -313,14 +313,14 @@
 
 .login-register p a:hover{
   text-decoration: underline;
-}
+} */
 
 .section-p1 {
-  padding: 240px 80px;
+  padding: 700px 40px;
 }
 
 .section-m1{
-  margin: 100px 10;
+  margin: 100px 10px;
 }
 
 button.normal{
@@ -341,7 +341,6 @@ button.normal{
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
 
 
