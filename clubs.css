@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background-color: #3498db; /* Blue header background */
+    background-color: #162938; /* Blue header background */
     color: #fff;
     padding: 10px;
     text-align: center;
@@ -25,7 +25,7 @@ section.club {
 }
 
 h2, h3, h4 {
-    color: #3498db; /* Blue headings */
+    color: #162938; /* Blue headings */
 }
 
 ul {
@@ -38,7 +38,7 @@ ul li {
 }
 
 footer {
-    background-color: #3498db;
+    background-color: #162938;
     color: #fff;
     text-align: center;
     padding: 10px;
