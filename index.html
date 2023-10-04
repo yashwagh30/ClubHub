@@ -5,26 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Exhibition</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
     <header class="header">
         <h2 class="logo"> VIT ClubHub</h2>
         <nav class="nav">
             <a href="index.html"> Home </a>
+            <a href="clubs.html"> Clubs </a>
             <a href="#"> About us </a>
             <a href="#"> News </a>
+            <a href="#"> Gallery </a>
             <a href="#"> FAQ's </a>
             <a href="#"> Contact us </a>    
             <button class="button-login-popup"> Get Started </button>
         </nav>
     </header>
+    <section class="hero">
+        <h4>VIT ClubHub</h4>
+        <h2>Ease access to your clubs</h2>
+        <h1>All Clubs at one place</h2>
+        <p>Join us now</p>
+        <button class="button-login-popup"> Get Started</button>
+    </section>
     <div class="wrapper">
         <span class="icon-close">
             <ion-icon name="close"></ion-icon>
         </span>
-        <div class="form-box login">
+        <div class="init" data-netlify-identity-menu>
             <h2>Login</h2>
             <form action="#">
                 <div class="input-box">
@@ -45,14 +56,14 @@
                     <label><input type="checkbox"> Remember me</label>
                     <a href="#"> <pre>Forgot Password</pre></a>
                 </div>
-                <button type="submit" class="btn">Login</button>
+                <button data-netlify-identity-button type="submit" id="btn" class="login">Login</button>
                 <div class="login-register">
                     <p>Don't have an account? <a href="#" class="register-link">  Register</a></p>
                 </div>
             </form>
         </div>
 
-        <div class="form-box register">
+        <div class="form-box register" data-netlify-identity-menu>
             <h2>Register</h2>
             <form action="#">
                 <div class="input-box">
@@ -79,19 +90,152 @@
                 <div class="remember-forgot">
                     <label><input type="checkbox"> I agree to terms and conditions</label>
                 </div>
-                <button type="submit" class="btn">Register</button>
+                <button type="submit" class="btn" data-netlify-identity-button>Register</button>
                 <div class="login-register">
                     <p>Already have an account? <a href="#" class="login-link">  Login</a></p>
                 </div>
             </form>
         </div>
     </div>
-
-    <section>
-        <h2>VIT ClubHub</h2>
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img class="f1-size" src="images/registration-form.jpg" alt="">
+            <h6>Club Registration</h6>
+        </div>
+        <div class="fe-box">
+            <img class="f1-size" src="images/news.jpg" alt="">
+            <h6>News</h6>
+        </div><div class="fe-box">
+            <img class="f1-size" src="images/chat.jpg" alt="">
+            <h6>Chat</h6>
+        </div><div class="fe-box">
+            <img class="f1-size" src="images/event.jpg" alt="">
+            <h6>Event Registration</h6>
+        </div>
     </section>
-
-
+    <div class="wrapper-slide">
+        <h2>Clubs</h2>
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <ul class="carousel">
+            <li class="card">
+                <div>
+                    <div class="img"><img src="images/logo/aiml.jpg"  alt="" draggable="false"></div>
+                    <h2>AIML Club</h2>
+                    <span>Technical Club</span>
+                </div>
+            </li>
+            <li class="card">
+                <div>
+                    <div class="img"><img src="images/logo/android.jpg"  alt="" draggable="false"></div>
+                    <h2>Android Club</h2>
+                    <span>Technical Clun</span>
+                </div>
+            </li>
+            <li class="card">
+                <div>
+                    <div class="img"><img src="images/logo/blockchain.jpg"  alt="" draggable="false"></div>
+                    <h2>Block Chain Club
+                    <span>Technical Club</span>
+                </div>
+            </li>
+            <li class="card">
+                <div>
+                    <div class="img"><img src="images/logo/cloudzone.jpg"  alt="" draggable="false"></div>
+                    <h2>Cloud Zone Club</h2>
+                    <span>Technical Club</span>
+                </div>
+            </li>
+            <li class="card">
+                <div>
+                    <div class="img"><img src="images/logo/cooking.jpg"  alt="" draggable="false"></div>
+                    <h2>Cooking Club</h2>
+                    <span>Non Technical Club</span>
+                </div>
+            </li>
+            <li class="card">
+                <div>
+                    <div class="img"><img src="images/logo/ecell.jpg"  alt="" draggable="false"></div>
+                    <h2>ECell Club</h2>
+                    <span>Technical Club</span>
+                </div>
+            </li> 
+            <li class="card">
+                <div>
+                    <div class="img"><img src="images/logo/fintech.jpg"  alt="" draggable="false"></div>
+                    <h2>Fintech Club</h2>
+                    <span>Technical Club</span>
+                </div>
+            </li> 
+            <li class="card">
+                <div>
+                    <div class="img"><img src="images/logo/fusion.jpg"  alt="" draggable="false"></div>
+                    <h2>Fusion Club</h2>
+                    <span>Non Technical Club</span>
+                </div>
+            </li> 
+            <li class="card">
+                <div>
+                    <div class="img"><img src="images/logo/ios.jpg"  alt="" draggable="false"></div>
+                    <h2>Ios Club</h2>
+                    <span>Technical Club</span>
+                </div>
+            </li>
+             <li class="card">
+                <div>
+                    <div class="img"><img src="images/logo/iot.jpg"  alt="" draggable="false"></div>
+                    <h2>IOT Club</h2>
+                    <span>Technical Club</span>
+                </div>
+            </li> 
+            <li class="card">
+                <div>
+                    <div class="img"><img src="images/logo/linux.jpg"  alt="" draggable="false"></div>
+                    <h2>Linux Club</h2>
+                    <span>Technical Club</span>
+                </div>
+            </li> 
+        </ul>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+    </div>
+    <section id="banner" class="section-m1">
+        <h4>Still have questions?</h4>
+        <h2>Visit FAQ's <section></section></h2>
+        <button class="normal">FAQ's</button>
+    </section>
+    <footer class="section-p1">
+        <div class="col">
+            <h2 class="logo">VIT ClubHub</h2>
+            <h4> Contact us</h4>
+            <p><strong>Address:</strong> Bhopal-Indore Highway, Kothrikalan, Sehore, Madhya Pradesh,466114 </p>
+            <p><strong>Contact:</strong> (+91) 832526XXXX / (+91) 832523XXXX</p>
+            <p><strong>Hours:</strong> 8:30 - 18:00 </p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href=""> About us </a>
+            <a href=""> Privacy Policy </a>
+            <a href=""> Terms and conditions</a>
+            <a href=""> Contact us </a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href=""> Sign In </a>
+            <a href=""> My Clubs </a>
+            <a href=""> My Events </a>
+            <a href=""> Help </a>
+        </div>
+        <div class="copyright">
+            <p>@ VIT ClubHub</p>
+        </div>
+    </footer>
     <script src="script.js">  </script>
 </body>
 </html>
