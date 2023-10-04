@@ -53,8 +53,9 @@
   transform-origin: left;
   transform: scaleX(1);
 }
+  
 
-.nav .button-login-popup {
+/* .nav .button-login-popup {
   width: 130px;
   height: 50px;
   background: transparent;
@@ -67,13 +68,13 @@
   font-weight: 500;
   margin-left: 40px;
   transition: 0.5s;
-}
+} */
 
-.nav .button-login-popup:hover {
+/* .nav .button-login-popup:hover {
   background: white;
   color: #162938;
 
-}
+} */
 
 .hero {
   position: absolute;
