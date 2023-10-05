@@ -1,40 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #f0f0f0; /* Light gray background */
     margin: 0;
+    background-image: url('images/pexels-scott-webb-3255761.jpg');
 }
 
 header {
-    background-color: #0e4076; /* Blue header */
+    background-color: #2785ea; /* Blue header */
     color: #fff; /* White text */
     text-align: center;
     padding: 20px 0;
-}
-
-nav {
-    background-color: #0056b3; /* Darker blue for navigation */
-    color: #fff;
-    padding: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-}
-
-main {
-    padding: 20px;
 }
 
 .article {

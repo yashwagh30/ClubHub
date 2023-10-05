@@ -1,27 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f5f5; /* Light blue background */
-}
+    background-image:url('images/club1.jpg') no-repeat;
+    display: flex;
+    
+} 
 
 header {
-    background-color: #162938; /* Blue header background */
-    color: #fff;
-    padding: 10px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    background: rgb(17, 53, 98);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 section.club {
     margin: 20px;
+    
 }
 
 .club-info {
-    background-color: #fff;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 20px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 2);
 }
 
 h2, h3, h4 {
@@ -45,4 +55,5 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    position: sticky;
 }
