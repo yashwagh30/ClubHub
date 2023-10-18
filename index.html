@@ -21,7 +21,8 @@
             <a href="faqs.html"> FAQ's </a>
             <!-- <a href="aboutus.html"> About us </a> -->
             <a href="#"> Contact us </a>    
-            <a href="#" class="text-get" data-netlify-identity-button></a>
+            <!-- <a href="chat/client/src/App.jsx" class="text-get">Login</a> -->
+            <button onclick="redirectToReactApp()">Login</button>
         </nav>
     </header>
     <section class="hero">
@@ -237,5 +238,10 @@
         </div>
     </footer>
     <script src="script.js">  </script>
+    <script>
+        function redirectToReactApp() {
+            window.location.href = 'chat/client/src/App.jsx'; // Replace with the actual path of your React app
+        }
+    </script>
 </body>
 </html>
