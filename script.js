@@ -47,9 +47,11 @@ carousel.classList.remove("no-transition");
 
 arrowBtns.forEach(btn => {
     btn.addEventListener("click", () => {
-        carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+        const direction = btn.getAttribute("data-direction");
+        carousel.scrollLeft += direction === "left" ? -firstCardWidth : firstCardWidth;
     });
 });
+
 
 const dragStart = (e) => {
     isDragging = true;
@@ -101,25 +103,3 @@ carousel.addEventListener("scroll", infiniteScroll);
 wrapperslide.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapperslide.addEventListener("mouseleave", autoPlay);
 
-netlifyIdentity.open();
-
-const user = netlifyIdentity.currentUser();
-
-netlifyIdentity.on('init', user => console.log('init', user));
-netlifyIdentity.on('login', user => console.log('login', user));
-netlifyIdentity.on('logout', () => console.log('Logged out'));
-netlifyIdentity.on('error', err => console.error('Error', err));
-netlifyIdentity.on('open', () => console.log('Widget opened'));
-netlifyIdentity.on('close', () => console.log('Widget closed'));
-
-netlifyIdentity.off('login'); 
-netlifyIdentity.off('login', handler); 
-
-netlifyIdentity.close();
-
-
-netlifyIdentity.logout();
-
-netlifyIdentity.refresh().then((jwt)=>console.log(jwt))
-
-netlifyIdentity.setLocale('en');
