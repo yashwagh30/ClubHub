@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Registration</title>
+    <link rel="stylesheet" href="eventreg.css" />
+    <style>
+      
+      
+      .container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+  </style>
+</head>
+<body>
+  <section class="container">
+    <img src="https://tse3.mm.bing.net/th?id=OIP.JnMBsSXw0SsRrpGEh3HmDgHaDl&pid=Api&P=0&h=180" alt="Club Registration Image">
+    <header>Club Registration</header>
+    <form action="#" class="form">
+      <div class="input-box">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter Full Name">
+        </div>
+        <div class="input-box">
+          <label>Registration Number</label>
+          <input type="text" placeholder="Enter Registration number">
+        </div>
+
+      <div class="column">
+        <div class="input-box">
+          <label>Phone Number</label>
+          <input type="text" placeholder="Enter phone number">
+
+          <div class="input-box">
+            <label>Select club *</label>
+            <div class="dropdown">
+                <div class="select">
+                    <span class="selected">Please Select</span>
+                    <div class="caret"></div>
+                </div>
+                <ul class="menu">
+                    <li>AI Club</li>
+                    <li>Android Club</li>
+                    <li>Fintech Club</li>
+                    <li>Linux Club</li>
+                    <li>Block Chain Club</li>
+                    <li>ECell Club</li>
+                    <li>Fusion Club</li>
+                    <li>Ios Club</li>
+                    <li>IOT Club</li>
+                    <li>Cooking Club</li>
+                    <li>Nature and Trekking Club</li>
+                </ul>
+            </div>
+          </div>  
+
+        <button> <a href="payment.html"> Pay now </a> </button>
+    </form>
+</section>
+
+  <script>
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    dropdowns.forEach(dropdown => {
+        const select = dropdown.querySelector('.select');
+        const caret = dropdown.querySelector('.caret');
+        const menu = dropdown.querySelector('.menu');
+        const options = dropdown.querySelectorAll('.menu li');
+        const selected = dropdown.querySelector('.selected');
+
+        select.addEventListener('click', () => {
+            select.classList.toggle('select-clicked');
+            caret.classList.toggle('caret-rotate');
+            menu.classList.toggle('menu-open');
+        });
+
+        options.forEach(option => {
+            option.addEventListener('click', () => {
+                selected.innerText = option.innerText;
+                selected.classList.remove('select-clicked');
+                caret.classList.remove('caret-rotate');
+                menu.classList.remove('menu-open');
+                options.forEach(opt => {
+                    opt.classList.remove('active');
+                });
+                option.classList.add('active');
+            });
+        });
+    });
+</script>
+</body>
+</html>
