@@ -17,7 +17,7 @@
             <a href="index.html"> Home </a>
             <a href="club/clubs.html"> Clubs </a>
             <a href="news/news.html"> News </a>
-            <a href="news/news.html"> Gallery </a>
+            <a href="gallery.html"> Gallery </a>
             <a href="faq/faqs.html"> FAQ's </a>
             <!-- <a href="aboutus.html"> About us </a> -->
             <a href="#"> Contact us </a>    
@@ -29,8 +29,8 @@
         <h2>Ease access to your clubs</h2>
         <h1>All Clubs at one place</h2>
         <p>Join us now</p>
-    </section>
-    <section id="feature" class="section-p1">
+        </section>
+    <div id="feature" class="section-p1">
         <div class="fe-box">
             <img class="f1-size" src="images/registration-form.jpg" alt="">
             <h6>Club Registration</h6>
@@ -45,7 +45,7 @@
             <img class="f1-size" src="images/event.jpg" alt="">
             <h6>Event Registration</h6>
         </div>
-    </section>
+    </div>
     <div class="wrapper-slide">
         <h2>Clubs</h2>
         <i id="left" class="fa-solid fa-angle-left"></i>
@@ -130,10 +130,25 @@
         </ul>
         <i id="right" class="fa-solid fa-angle-right"></i>
     </div>
+    <div class="news-container">
+        <div class="news-item">
+            <h2><a href="#">Headline 1</a></h2>
+            <p>News content goes here...</p>
+        </div>
+        <div class="news-item">
+            <h2><a href="#">Headline 2</a></h2>
+            <p>News content goes here...</p>
+        </div>
+        <div class="news-item">
+            <h2><a href="#">Headline 3</a></h2>
+            <p>News content goes here...</p>
+        </div>
+    </div>
+
     <section id="banner" class="section-m1">
         <h4>Still have questions?</h4>
         <h2>Visit FAQ's <section></section></h2>
-        <button class="normal">FAQ's</button>
+        <button href="faq/faqs.html" class="normal">FAQ's</button>
     </section>
     <footer class="section-p1">
         <div class="col">
@@ -170,10 +185,5 @@
         </div>
     </footer>
     <script src="script.js">  </script>
-    <script>
-        function redirectToReactApp() {
-            window.location.href = 'chat/client/src/App.jsx'; // Replace with the actual path of your React app
-        }
-    </script>
 </body>
 </html>
