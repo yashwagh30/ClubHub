@@ -29,6 +29,9 @@ iconClose.addEventListener('click', ()=> {
     wrapper.classList.remove('active-popup');
 })
 
+document.getElementById("myButton").onclick = function () {
+    location.href = "https://vitclubhubregistration.netlify.app/";   
+ };
 
 let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
 let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
@@ -95,6 +98,9 @@ const autoPlay = () => {
     timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
 }
 autoPlay();
+
+
+    
 
 carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("mousemove", dragging);
