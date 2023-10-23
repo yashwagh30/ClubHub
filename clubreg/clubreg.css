@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgb(218, 220, 220);
+}
+
+
+.container {
+    position: relative;
+    max-width: 700px; /* Corrected the typo, changed "=" to ":" */
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    border-color: #000000;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container header {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container .form {
+    margin-top: 30px;
+}
+
+.form .input-box {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.input-box label {
+    color: #333;
+}
+
+.input-box input {
+    position: relative; 
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+.form .column {
+    display: flex;
+    column-gap: 15px;
+    background:  ;
+}
+
+.form button {
+    height: 55px;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 400;
+    transition: all 0.2 ease;
+    background-color:rgb(44, 16, 183)
+}
+
+.form button:hover{
+    background-color: rgb(88, 56, 250);
+}
+
+.dropdown{
+    min-width: 15em;
+    position: relative;
+    margin: 2em;
+}
+.dropdown * {
+    box-sizing: border-box;
+}
+
+.select{
+    background: #004cff;
+    color: #fff;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px #0015ff solid;
+    border-radius: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.selected-clicked {
+    border: 2px #26489a solid;
+    box-shadow: 0 0 0.8em #26489a;
+}
+
+.select:hover {
+    background: #2569f3;
+}
+
+.caret {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: 0.3s;
+}
+
+.caret-rotate {
+    transform: rotate(180deg)
+}
+
+.menu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #ffffff;
+    border: 1px #0c2766 solid;
+    box-shadow: 0 0.5em  1em rgba(70, 105, 200, 0.2);
+    border-radius: 0.5em;
+    color: #000000;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.menu li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+.menu li:hover {
+    background: #3a6efe;
+}
+
+.active {
+    background: #505fb7;
+}
+
+.menu-open {
+    display: block;
+    opacity: 1;
+}
+
