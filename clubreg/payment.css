@@ -10,10 +10,10 @@ body {
 } 
 
 header {
-    display: flex;
+    display: sticky;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 100px;
+    padding: 20px 50px;
     background: rgb(17, 53, 98);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 999;
@@ -42,6 +42,19 @@ section.club {
     text-decoration: none;
 }
 
+.club-info button {
+    height: 55px;
+    width: 100%;
+    color: #f3e9e9;
+    font-size: 1rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 400;
+    transition: all 0.2 ease;
+    background-color:rgb(46, 21, 173)
+}
 h2, h3, h4 {
     color: #162938; /* Blue headings */
 }
@@ -55,6 +68,7 @@ ul li {
     margin-bottom: 5px;
 }
 
+
 footer {
     background-color: #162938;
     color: #fff;
@@ -62,6 +76,6 @@ footer {
     padding: 10px;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 25%;
     position: sticky;
 }
