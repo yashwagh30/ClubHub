@@ -1,0 +1,6 @@
+services:
+  ecoharmony-web:
+    build: .
+    ports:
+      - "3001:80"
+    restart: always
