@@ -1,9 +1,17 @@
-# Dockerfile
+# Use a lightweight Node.js image
+FROM node:18-alpine
 
-FROM nginx:alpine
+# Set working directory
+WORKDIR /app
 
-COPY . /usr/share/nginx/html
+# Copy all files
+COPY . .
 
-EXPOSE 3002
+# Install serve (globally, to serve static files)
+RUN npm install --global serve
 
-CMD ["nginx", "-g", "daemon off;"]
+# Expose port (choose any available port)
+EXPOSE 52661
+
+# Start the static file server
+CMD ["serve", ".", "-l", "52661"]

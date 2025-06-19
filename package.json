@@ -1,0 +1,17 @@
+{
+  "name": "clubhub",
+  "version": "1.0.0",
+  "description": "ClubHub - Multi-page frontend site",
+  "scripts": {
+    "start": "npx serve .",
+    "lint": "eslint . --ext .js",
+    "format": "prettier --write ."
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "prettier": "^3.2.5",
+    "serve": "^14.2.0"
+  }
+}
